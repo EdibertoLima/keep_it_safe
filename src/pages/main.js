@@ -4,9 +4,6 @@ import { ScrollView, View, Text, StyleSheet, Dimensions } from 'react-native';
 import MapView from 'react-native-maps';
 
 export default class App extends Component {
-  static navigationOptions = {
-    title:'Keep it Safe'
-  };
   state = {
     places: [
       {

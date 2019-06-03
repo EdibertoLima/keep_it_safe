@@ -57,6 +57,7 @@ export default class App extends Component {
         >
           { this.state.places.map(place => (
             <MapView.Marker
+
               ref={mark => place.mark = mark}
               title={place.title}
               description={place.description}
@@ -65,6 +66,7 @@ export default class App extends Component {
                 latitude: place.latitude,
                 longitude: place.longitude,
               }}
+             image={require('./safe-box.png')}
             />
           ))}
         </MapView>

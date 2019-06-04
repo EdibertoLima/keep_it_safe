@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Text, StyleSheet, Dimensions } from 'react-native';
+import { ScrollView, View, Text, StyleSheet, Dimensions,Button } from 'react-native';
 
-import MapView from 'react-native-maps';
+import MapView,{ AnimatedRegion, Marker } from 'react-native-maps';
 
 export default class App extends Component {
+  static navigationOptions = {
+    title: 'Keep it safe',
+  };
   state = {
     places: [
       {
@@ -49,7 +52,7 @@ export default class App extends Component {
           }}
           style={styles.mapView}
           rotateEnabled={false}
-          //scrollEnabled={false}
+          scrollEnabled={false}
           zoomEnabled={false}
           showsPointsOfInterest={false}
           showBuildings={false}
@@ -89,19 +92,22 @@ export default class App extends Component {
 
             setTimeout(() => {
               mark.showCallout();
-            }, 500)
+            }, 300)
           }}
         >
           { this.state.places.map(place => (
             <View key={place.id} style={styles.place}>
               <Text style={styles.title}>{ place.title }</Text>
               <Text style={styles.description}>{ place.description }</Text>
+              <Button title="Abrir cofre"onPress={() => {this.props.navigation.navigate("cofres") }} />
             </View>
           )) }
         </ScrollView>
       </View>
     );
+   
   }
+  
 }
 
 const { height, width } = Dimensions.get('window');
@@ -128,7 +134,7 @@ const styles = StyleSheet.create({
 
   place: {
     width: width - 40,
-    maxHeight: 100,
+    maxHeight: 150,
     backgroundColor: '#DEE0E0',
     marginHorizontal: 20,
     borderTopLeftRadius: 20,
@@ -147,4 +153,5 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 5,
   },
+  
 });

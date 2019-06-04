@@ -23,7 +23,7 @@ export default class App extends Component {
       {
         id: 3,
         title: 'shoping benbica',
-        description: 'o melhor da codade',
+        description: 'o melhor da cidade',
         latitude: -3.739041,
         longitude: -38.540129,
       }
@@ -129,10 +129,10 @@ const styles = StyleSheet.create({
   place: {
     width: width - 40,
     maxHeight: 100,
-    backgroundColor: '#FFF',
+    backgroundColor: '#DEE0E0',
     marginHorizontal: 20,
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
     padding: 20,
   },
 

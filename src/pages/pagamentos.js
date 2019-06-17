@@ -1,15 +1,15 @@
 import React from 'react';
 import { View, Button, Text } from 'react-native';
 
-const Page2 = () => (
+const Page3 = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Selecione o cofre desejado</Text>
+    <Text>Cartoes</Text>
   </View>
 );
 
-Page2.navigationOptions = {
-  title: 'Armários',
-} 
+Page3.navigationOptions = {
+  title: 'Pagamentos',
+}
 
 
-export default Page2;
+export default Page3;

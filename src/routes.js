@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import {button,View,Text,} from 'react-native'
 import Main from './pages/main'
 import cofres from './pages/cofre'
-
-
+import pag from './pages/pagamentos'
+import pert from './pages/pertences'
+import Icon from 'react-native-vector-icons/Ionicons'
 
 
 const route= createStackNavigator({
@@ -13,23 +14,33 @@ const route= createStackNavigator({
     cofres,
     
 }, {
-  defaultNavigationOptions:{
-    
+  
+  defaultNavigationOptions:({ navigation }) =>{
+    return{
     headerStyle:{
         backgroundColor: "#2E66FF"
     },
-    headerTintColor: "#FFF"
-  },  
-});
+    headerTintColor:"#FFF",
+    headerLeft: (
+      <Icon
+        style={{ paddingLeft: 10 }}
+        onPress={() => navigation.openDrawer() }
+        name="md-menu"
+        size={30}
+      />
+      )
+    
+  }  
+}}
+);
+
 
 const route2 = createDrawerNavigator({
   
-    'Keep it Safe':route,
-    Mapa:Main,
+    "Keep it Safe":route,
     Armarios:cofres,
-  
- 
-
+    Pagamentos:pag,
+    Pertences:pert,
 });
 
 const container= createAppContainer(route2);

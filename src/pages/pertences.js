@@ -9,6 +9,7 @@ const Page4 = () => (
 
 Page4.navigationOptions = {
   title: 'Pertences',
+  
 }
 
 

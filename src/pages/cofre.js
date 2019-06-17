@@ -1,9 +1,11 @@
 import React from 'react';
-import { View, Button, Text } from 'react-native';
+import { View, Button, Text,StyleSheet } from 'react-native';
 
 const Page2 = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Selecione o cofre desejado</Text>
+  <View style={styles.Armarioscontainer}>
+    <Text style={styles.Armariostitle}>selecione uma gaveta</Text>
+    <Button title="gaveta x" onPress={() => { }} />
+  
   </View>
 );
 
@@ -12,4 +14,24 @@ Page2.navigationOptions = {
 } 
 
 
-export default Page2;
+
+export default Page2 ;
+
+const styles = StyleSheet.create({
+  Armarioscontainer:{
+    flex: 1, 
+    justifyContent: 'center', 
+    alignItems: 'center',
+    
+  },
+
+  Armariostitle:{
+    position: 'absolute',
+    fontSize:18,
+    fontWeight:'bold',
+    color:'#333',
+    top: 10
+
+  },
+
+});

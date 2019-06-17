@@ -36,11 +36,22 @@ const route= createStackNavigator({
 
 
 const route2 = createDrawerNavigator({
-  
+    
     "Keep it Safe":route,
     Armarios:cofres,
     Pagamentos:pag,
     Pertences:pert,
+},{
+  headerStyle:{
+    backgroundColor: "#2E66FF"
+},
+  headerTintColor:"#FFF",
+  
+  headerTitleStyle: {
+    fontWeight: 'bold',
+    fontSize:18,
+    position: 'absolute',
+  },
 });
 
 const container= createAppContainer(route2);

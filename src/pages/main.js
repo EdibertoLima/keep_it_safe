@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
   place: {
     width: width - 40,
     maxHeight: 150,
-    backgroundColor: '#DEE0E0',
+    backgroundColor: 'rgba(184, 188, 204, 0.5)',
     marginHorizontal: 20,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,

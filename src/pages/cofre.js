@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, Button, Text,StyleSheet } from 'react-native';
+import firebase from 'react-native-firebase';
 
 const Page2 = () => (
   <View style={styles.Armarioscontainer}>
-    <Text style={styles.Armariostitle}>selecione uma gaveta</Text>
+    <Text style={styles.Armariostitle}>Selecione uma gaveta</Text>
     <Button title="gaveta x" onPress={() => { }} />
   
   </View>

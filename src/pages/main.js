@@ -11,8 +11,8 @@ export default class App extends Component {
     places: [
       {
         id: 1,
-        title: 'Igrja de fátima',
-        description: 'igreja...',
+        title: 'Igreja de fátima',
+        description: 'Igreja...',
         latitude: -3.752056,
         longitude: -38.526228,
       },

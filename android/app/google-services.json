@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "117936487891",
+    "firebase_url": "https://keep-it-safe-1559513495146.firebaseio.com",
+    "project_id": "keep-it-safe-1559513495146",
+    "storage_bucket": "keep-it-safe-1559513495146.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117936487891:android:f906ab376caefbb5",
+        "android_client_info": {
+          "package_name": "com.keep_it_safe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117936487891-dlmb1dqb00qged4un37e0qp6bmdfcqon.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnusFWnIja40kUJHeeuiIdUOcxbnwR8w0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117936487891-dlmb1dqb00qged4un37e0qp6bmdfcqon.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
